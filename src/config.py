@@ -30,8 +30,8 @@ class Config(object):
         self.db_keys = settings.get('db_keys', [])
         self.flowappglue = settings.get('flowappglue', "")
         self.uri = settings.get('uri', definitions.DEFAULT_URI)
-        self.host = settings.get('host', definitions.DEFAULT_SERVER)
-        self.port = settings.get('port', definitions.DEFAULT_PORT)
+        self.host = settings.get('host', definitions.DEFAULT_SERVER_HOST)
+        self.port = settings.get('port', definitions.DEFAULT_SERVER_PORT)
         self.db_dir = settings.get('db_dir', definitions.get_default_db_path())  # NOQA
         self.schema_dir = settings.get('schema_dir', "")
         self.attachment_dir = settings.get('attachment_dir', definitions.get_default_attachment_path())  # NOQA
